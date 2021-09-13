@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 * {
     font-family: 'Raleway', sans-serif;
 }
@@ -12,6 +19,9 @@ header {
     background: url(../images/bg-2.jpg);
     background-attachment: fixed;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     width: 100%;
     height: 100vh;
 }
@@ -72,6 +82,8 @@ nav {
     color: #777;
     font-weight: 500;
     padding: 15px;
+    -webkit-transition: all .8s ease;
+    -o-transition: all .8s ease;
     transition: all .8s ease;
 }
 
@@ -136,6 +148,8 @@ nav {
 .results .form a {
     color: #d34a4a;
     font-weight: bold;
+    -webkit-transition: color .8s ease;
+    -o-transition: color .8s ease;
     transition: color .8s ease;
 }
 
@@ -171,7 +185,8 @@ nav {
 .results .form input:checked ~ label {
     background-color: #c9302c;
     border-color: #ac2925;
-    box-shadow: inset 0 3px 5px rgb(0 0 0 / 13%);
+    -webkit-box-shadow: inset 0 3px 5px rgb(0 0 0 / 13%);
+            box-shadow: inset 0 3px 5px rgb(0 0 0 / 13%);
 }
 .results .form input:checked ~ label i {
     opacity: 1;
