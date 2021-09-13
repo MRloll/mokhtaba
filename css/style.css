@@ -16,8 +16,10 @@
 }
 
 header {
+    position: sticky;
+    z-index: -1;
+    top: 0px;
     background: url(../images/bg-2.jpg);
-    background-attachment: fixed;
     background-position: center;
     background-size: cover;
     -webkit-background-size: cover;
@@ -106,6 +108,8 @@ nav {
 /* start resluts */
 .results {
     color: #777;
+    background-color: white;
+    padding-top: 20px;
 }
 
 .heading h3 {
@@ -212,6 +216,7 @@ nav {
 
 .footer {
     color: #777;
+    background-color: white;
 }
 
 .scroll-to-top {
